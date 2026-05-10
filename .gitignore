@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Maven
+backend/target/
+
+# Eclipse
+.settings/
+.classpath
+.project
+.factorypath
+
+# IDE
+.idea/
+*.iml
+*.class
