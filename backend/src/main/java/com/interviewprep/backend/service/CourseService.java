@@ -1,20 +1,20 @@
 package com.interviewprep.backend.service;
 
-import com.interviewprep.backend.entity.Course;
-import com.interviewprep.backend.repository.CourseRepository;
+import com.interviewprep.backend.model.Course;
+import com.interviewprep.backend.repo.CourseRepo;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class CourseService {
 
-    private final CourseRepository courseRepository;
+    private final CourseRepo courseRepo;
 
-    public CourseService(CourseRepository courseRepository) {
-        this.courseRepository = courseRepository;
+    public CourseService(CourseRepo courseRepo) {
+        this.courseRepo = courseRepo;
     }
 
     public List<Course> getAllCourses() {
-        return courseRepository.findAll();
+        return courseRepo.findAll();
     }
 }
